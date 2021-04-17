@@ -1,0 +1,30 @@
+<div class="detail_view">
+  <h3 class="project_title">{{project.name}}</h3>
+  <h4>{{project.description_html|safe}}</h4>
+
+<div class="media body">
+<div class="row">
+
+  <h5>
+    <span class="username">
+    <a href="{% url 'projects:user_all' username=project.owner.username %}">@{{project.owner.username}}</a></span>
+    <time class="time">
+      <a href="#">{{project.created_at}}</a>
+    </time>
+  </h5>
+</div>
+
+
+
+  <div class="media footer">
+    {% if user.is_authenticated and project.owner == user %}
+      <a href="{% url 'projects:delete' slug=project.slug %}" title='delete' class="btn btn-simple">
+<span class="test-danger icon-label">Delete</span>
+      </a>
+    {% endif %}
+
+  </div>
+
+</div>
+
+</div>

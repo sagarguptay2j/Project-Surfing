@@ -1,0 +1,29 @@
+{% extends 'usergroups/usergroup_base.html' %}
+{% block pregroup %}
+<h1>{{ usergroup.name }}</h1>
+<h2>Member count:{{ usergroup.members.count }}</h2>
+
+<div >
+  {% if view.check %}
+  <a href="{% url 'usergroups:leave' slug=usergroup.slug %}" class="btn btn-lg btn-warning "><span class="glyphicon glyphicon-remove-circle"></span>Leave</a>
+  {% else %}
+    <a href="{% url 'usergroups:join' slug=usergroup.slug %}" class="btn btn-lg btn-warning "><span class="glyphicon glyphicon-ok-circle"></span>Join</a>
+  {% endif %}
+
+</div>
+
+{% endblock %}
+
+{% block group_content %}
+<div class="col-md-8">
+  {% if usergroup.projects.count == 0 %}
+  <h1>No projects in this group!</h1>
+  {% else %}
+  {% for project in usergroup.projects.all %}
+  {% include 'projects/_project.html' %}
+  {% endfor %}
+  {% endif %}
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,145 @@
+<nav class="navbar navbar-expand-md navbar-light" id="lappy" style="background-color: black;">
+<a class="navbar-brand" style="color: white;" href="#">Navbar</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav ">
+        <li class="nav-item active">
+            <a class="nav-link" style="color: white;" href="#"><span><i
+                        class="text-white fas fa-home"></i></span>&nbsp;&nbsp;Home <span
+                    class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span><i class="text-white fas fa-bars"></i></span>&nbsp;&nbsp;My Quiz<span
+                    style="visibility: hidden;">---</span>
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Collections</a>
+                <a class="dropdown-item" href="#">Favorites</a>
+                <a class="dropdown-item" href="#">My Drafts</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" style="color: white;" href="#"><span><i
+                        class="text-white fas fa-chart-bar"></i>&nbsp;&nbsp;</span>Reports</a>
+        </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item mr-3">
+            <form class="form-inline my-2 my-lg-0">
+                <button class="btn  my-2 my-sm-0" type="submit"
+                    style="background-color:#d0f224;color:black;box-shadow: 2px 2px grey; font-weight: bold; font-size: 20px;">Create</button>
+            </form>
+        </li>
+        <li class="nav-item dropdown mr-1">
+            <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span><i class="text-white fas fa-user-circle" style="font-size: 30px;"></i></span><span
+                    style="visibility: hidden;">---</span>&nbsp;&nbsp;
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">View Profile</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" style="color: white;" href="#"><span><i class="text-danger fas fa-sign-out-alt"
+                        style="font-size: 25px;"></i>&nbsp;&nbsp;</span>Log out</a>
+        </li>
+    </ul>
+</div>
+</nav>
+<div class="wrapper" id="mobile">
+<!-- Sidebar  -->
+<nav id="sidebar">
+
+
+    <ul class="list-unstyled components">
+        <a>
+            <p><span><i class="text-white fas fa-home"></i></span>&nbsp;&nbsp;Home
+            </p>
+        </a>
+
+        <a>
+            <p><span><i class="text-white fas fa-compass"></i></span>&nbsp;&nbsp;Discover
+            </p>
+        </a>
+
+        <li class="active">
+            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><span><i
+                        class="text-white fas fa-bars"></i></span>&nbsp;&nbsp;My Quiz</a>
+            <ul class="collapse list-unstyled" id="homeSubmenu">
+                <li>
+                    <a href="#">Collections</a>
+                </li>
+                <li>
+                    <a href="#">Favorites</a>
+                </li>
+                <li>
+                    <a href="#">My drafts</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#"><span><i class="text-white fas fa-chart-bar"></i>&nbsp;&nbsp;</span>Reports</a>
+        </li>
+        <li>
+            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"
+                class="dropdown-toggle"><span><i class="fas fa-question-circle"></i>&nbsp;&nbsp;</span>Supports</a>
+            <ul class="collapse list-unstyled" id="pageSubmenu">
+                <li>
+                    <a href="#">Help</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">Library</a>
+                </li>
+                <li>
+                    <a href="#">Certification</a>
+                </li>
+                <li>
+                    <a href="#">Shop</a>
+                </li>
+                <li>
+                    <a href="#">Suggest a feature</a>
+                </li>
+
+            </ul>
+        </li>
+        <li>
+            <a href="#"><span><i class="text-danger fas fa-sign-out-alt"></i></span>&nbsp;&nbsp;Sign out</a>
+        </li>
+    </ul>
+
+     <div class="help-box" style="border:2px solid #d0f224; padding:5px 5px 5px 5px; margin-left: 10px; margin-right: 10px; margin-top:50px; border-radius:10px ;" >
+            <h5 class="text-white m-t-0">For Help ?</h5>
+            <p class=""><span class="text-white" style="font-size: 15px;">Email:&nbsp;&nbsp;abc@gmail.com</span> <br /> </p>
+        </div>
+
+
+</nav>
+
+<!-- Page Content  -->
+<div id="content">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+                <i class="fas fa-align-left"></i>
+            </button>
+
+
+
+        </div>
+    </nav>
+
+
+</div>
+</div>

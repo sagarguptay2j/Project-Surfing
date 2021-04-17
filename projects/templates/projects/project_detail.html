@@ -1,0 +1,15 @@
+{% extends 'projects/project_base.html' %}
+
+{% block project_content %}
+<div class="col-md-8">
+  {% include 'projects/_project.html'%}
+</div>
+{% endblock %}
+
+{% block post_project %}
+{% for comment in views.comments_list %}
+<div class="jumbotron">
+  {% include 'projects/_comment.html'%}
+</div>
+{% endfor%}
+{% endblock %}

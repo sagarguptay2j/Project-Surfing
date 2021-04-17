@@ -1,0 +1,21 @@
+<div class="comment_view">
+
+  <h4>{{comment.text_html|safe}}</h4>
+
+<div class="media body">
+<div class="row">
+
+  <h5>
+    <span class="username">
+    <a href="{% url 'projects:user_project_list' username=comment.author.username %}">@{{comment.author.username}}</a></span>
+    <time class="time">
+      {{comment.create_date}}
+    </time>
+  </h5>
+</div>
+
+
+
+</div>
+
+</div>
